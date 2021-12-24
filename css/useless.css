@@ -1,0 +1,640 @@
+:root{
+    --yellow: #FFC700;
+    --pink: #B33CC8;
+    --blue: #006FBA;
+  
+  }
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+  }
+
+  html {
+    height: 100;
+    box-sizing: border-box;
+  }
+
+
+
+body{
+  margin: 0;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.125rem;
+  max-width: 1440px;
+  margin: 0 auto !important; 
+
+}
+
+img{
+    max-width: 100%;
+    display: block;
+  }
+
+.btn{
+    background-color: var(--pink);
+    color: white;
+    border-radius: 16px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 30px;
+    width: auto;
+    
+}
+
+
+.wrapper{
+
+    align-self: center;
+    display: grid;
+
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: minmax(auto, 1fr);
+ /* max-width: 1040px; */
+    /* grid-auto-rows: min-content; */
+    /* grid-auto-rows: 205px; */
+
+}
+
+
+.banner{
+    /* display: none; */
+    grid-area: 1 / 1 / 2 / 13;
+    background-color: var(--yellow);
+    display: none;
+}
+
+
+.hero{
+
+    background-image: url('../img/girl.png');
+    height: 100vw;
+     /* You must set a specified height */
+    /* width: auto; */
+ /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+ max-height: 1400px;
+  background-size: cover; /* Resize the background image to cover the entire container */
+  /* background-position: inherit;  */
+
+ 
+  background-position: center top;
+  grid-area: 1/1/7/13;
+
+
+    
+}
+
+
+.mywish{
+
+    grid-area: 4/ 11 /  6/ 12;
+    text-align: right;
+    color: white;
+    font-size: 1rem;
+    
+    padding-left: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: end;
+}
+
+
+
+
+/* FORM AREA  */
+.donation{
+    /* Row start, col start, row end, col end */
+    grid-area: 1 / 2 / 8/ 6 ;
+    background-color: var(--yellow);
+    display: flex;
+    flex-direction: column;
+    min-height: 900px;
+    max-width: auto;
+    align-self:auto;
+
+    /* max-height: 1650px; */
+
+}
+.donation-title{
+    padding-top: 40px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+    font-size: 1.6rem;
+  
+
+    box-shadow: inset  0em  .8em .5em  -.9em black;  
+
+}
+
+.styform{
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px 20px 20px ;
+    /* padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px; */
+    margin: 20px;
+    height: 92%;
+  
+    justify-content: center;
+    overflow: auto;
+    border-radius: 15px;
+
+
+}
+
+.styform p{
+    text-align: center; font-size: .98rem;
+}
+.styform input{
+     /* padding: 10px; */
+}
+.foundlogo{
+    margin-top: 10px;
+padding-left: 50px;
+padding-right: 50px;
+}
+/* end form */
+
+
+
+
+
+.meet-her{
+  
+    grid-area: 7 / 9 / 8 / 11; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.meet-her span{
+
+    color: var(--pink);
+}
+
+.meet-her b{
+    text-align: center;
+}
+
+
+
+
+/* BEGINS SECTION 2 [PROFILE] : photo of her sitting and description */
+
+.profile-grid{
+    display: inline-grid;
+    grid-template-columns: 60% 40%;
+    grid-auto-rows: minmax(0, 1fr);
+    /* grid-gap: 10px; */
+    /* text-align: center; */
+    /* align-items: center; */
+    align-items: space-between;
+    align-content: space-between;    
+    margin-bottom: 100px;
+ 
+
+
+}
+.profile-grid p{
+  font-size: .8rem;
+
+}
+
+
+.about-profile{
+    /* flex: 0 1 60%; */
+    justify-self: center;
+    padding: 5em;
+    max-width: 800px;
+
+
+
+}
+.profile-img{
+    /* flex: 0 1 40% ; */
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+}
+
+
+
+/* YELLOW SECTION */
+.yellow-bk{
+background-color: var(--yellow);
+display: grid;
+grid-template-columns: repeat(6, 1fr);
+grid-template-rows: repeat(auto-fill, 60px);
+
+}
+
+.yellow-bk-banner{
+ 
+    background-color: #B33CC8;
+     color: white;
+ 
+text-align: center;  
+    grid-area: 2 / 1/ 3 /7;
+    padding: 10px;
+}
+
+
+.yellow-bk-about{
+    margin: 30px 30px;
+
+    grid-area: 3 / 2 / 4/ 5;
+    letter-spacing:3px ;
+    font-size: .87rem;
+
+}
+.yellow-bk-wishes{
+    grid-area: 3 / 5 / 4 / 6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.yellow-bk-wishes b{
+    font-size: .9rem;
+}
+.yellow-bk-wishes span{
+    color: var(--pink);
+}
+
+
+
+/* Business card section */
+.bizcard{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(auto-fill, 60px);
+    grid-gap: 10px;
+   
+}
+
+.bizcard img{
+    grid-area: 2 / 2/ 4 / 4;
+    margin-bottom: 30px;
+}
+
+.free-banner{
+   grid-area: 2 / 4 / 3 / 7; 
+  text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    align-self: end;
+}
+.bizcard-discount{
+    grid-area: 3 / 4 / 4 / 7;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+
+}
+
+.btn-col{
+    display: flex;
+    flex-direction: column;
+    align-items: inherit;
+}
+.btn-3{
+    margin: 10px;
+    width: 30%;
+}
+
+
+
+/* Blue background section */
+.blue-bk{
+    background-color: var(--blue);
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(auto-fill, 60px);
+
+
+}
+.blue-bk p{
+    color: white;
+    margin: 10px;
+}
+
+
+.thanks{
+    text-align: center;
+    grid-area: 1/2/4/6;
+    margin: 30px 30px;
+}
+
+.ceo-profile{
+    grid-area: 4/1/6/7;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+    text-align: left;
+}
+
+
+/* foooter */
+footer{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(auto-fill, 60px);
+
+}
+.trademark-img-desc{
+    grid-area: 2 / 3 / 3 / 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.trademark-desc{
+    grid-area: 3 / 2 / 4 / 6;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    text-align: center;
+    align-self: end;
+}
+.trademark-desc p{
+    grid-area: 1/1/2/2 ;
+    align-self: center;
+    justify-self: center;
+
+}
+.trademark-desc img{
+    grid-area: 2 / 1 /4/2;
+    align-self: center;
+    justify-self: center;
+}
+
+
+
+
+
+
+
+
+/* tablet view  */
+@media (max-width:961px) {
+    .wrapper{
+            grid-auto-rows: min-content;
+    }
+    .banner{
+        display: block;
+        height: 100px;
+        width: auto;
+
+ 
+
+    }
+
+    .hero{
+    background-image: url('../img/girlsmall.png');
+    /* grid-area:  2 / 1 / 4 / 13; */
+    background-position: center;
+    grid-area: 2/1/5/13;
+    height: 50vw;
+    width: auto;
+
+
+    }
+
+
+
+    .mywish{
+        grid-area: 2 / 1 / 4 / 3;
+        font-size: .8rem;
+        margin-top: 10px;
+        text-align: left;
+    }
+
+
+    /* FORM AREA */
+    .donation{
+        grid-area: 5 / 1 / 8 / 13;
+    }
+
+    .donation-title{
+     display: none;
+    }
+    
+
+
+    .meet-her{
+        grid-area: 9 / 1 / 10 / 13; 
+        margin: 50px;
+    }
+
+
+     /* PROFILE */
+
+     .profile-grid{
+        display: inline-grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto;
+
+     grid-template-areas: 
+     'profile-img '
+     'about-profile ';
+        justify-content: stretch; 
+     }
+    
+
+     .about-profile{
+        padding: 1em;
+        grid-area: about-profile;
+     
+     }
+     .profile-img{
+         grid-area: profile-img;
+         align-self: stretch;
+
+     }
+
+
+
+
+     /* Business  card area tablet */
+     .bizcard{
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(auto-fill, 60px);
+        grid-gap: 20px;
+ 
+    
+    }
+    
+    .bizcard img{
+        grid-area: 2 / 2/ 3 / 6;
+        margin-bottom: 30px;
+        
+        justify-self: center;
+        
+    
+    
+    }
+    .free-banner{
+        grid-area: 1 / 2/ 2/ 6;
+    }
+    
+    .bizcard-discount{
+        grid-area: 3 / 2 / 4 / 6;
+        align-items: center;
+    }
+
+    .btn-col{
+        flex-direction: row;
+    }
+    .btn-3{
+        display: inline;
+        margin: 10px;
+        width: 30%;
+    }  
+
+}
+
+
+
+/* PHONES */
+@media (max-width:700px) {
+/* 
+    
+    
+
+
+
+
+
+
+*/
+
+
+
+
+
+
+    
+
+.yellow-bk-banner{
+    grid-area: 1 / 1/ 3 /7 ;
+}
+
+.yellow-bk-about{
+    grid-area: 3 / 1 / 4 / 7 ;
+}
+
+
+.yellow-bk-wishes{
+    grid-area: 4 / 1 / 5 / 7;
+
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+
+
+/*  Business card section*/
+
+.btn-col{
+
+    justify-content: center;
+}
+.btn-fax{
+    display: none;
+}
+
+/* blue section moobile */
+.blue-bk{
+    background-color: var(--blue);
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(auto-fill, 60px);
+
+
+}
+.blue-bk p{
+    color: white;
+    margin: 10px;
+    font-size: .8rem;
+}
+
+
+.thanks{
+    text-align: center;
+    grid-area: 1/1/4/7;
+    margin: 30px 30px;
+}
+
+.ceo-profile{
+    grid-area: 4/1/6/7;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+    text-align: left;
+}
+
+
+/* 3.
+fix footer and how the paragraphs stack. */
+
+/* foooter */
+footer{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(auto-fill, 60px);
+
+}
+.trademark-img-desc{
+    grid-area: 2 / 2 / 3 / 6;
+    display: grid;
+    font-size: .8rem;
+}
+
+.trademark-desc{
+    grid-area: 3 / 2 / 4 / 6;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    text-align: center;
+    align-self: end;
+}
+
+.trademark-desc p{
+    grid-area: 1/1/2/2 ;
+    text-align: center;
+    font-size: .9rem;
+    
+
+}
+.trademark-desc img{
+    grid-area: 2 / 1 /4/2;
+    align-self: center;
+    justify-self: center;
+}
+
+
+
+}
+
+
+/* 
+TODO 
+1. align the botton p on  orange background.
+2.remove one of the cards from the card section. 
+
+*/

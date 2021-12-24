@@ -1,0 +1,946 @@
+:root{
+    --yellow: #FFC700;
+    --pink: #B33CC8;
+    --blue: #1E5AAA;
+    --light-font:#595959;
+
+  
+  }
+
+
+
+*, *:before, *:after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+ 
+
+
+body{
+  margin: 0;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+  margin: 0 auto !important; 
+  /* max-width: 1500px; */
+}
+
+img{
+    max-width:  100%;
+    display: block;
+   
+  }
+
+.btn{
+    background-color: var(--pink);
+    color: white;
+    border-radius: 16px;
+    border: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 30px;
+    width: auto;
+    
+}
+
+/* largest */
+ 
+.wrapper-grid{
+    display: grid;
+    /* width: 100%;
+    height: 100%; */
+    min-height: 0;  
+    min-width: 0; 
+    /* grid-template-columns:  repeat(12, minmax(0, auto)); */
+    grid-template-columns:  repeat(12, 1fr);
+
+ 
+    /* grid-auto-rows:  minmax(100px, auto);   */
+    
+}
+
+/* 1 */
+header{
+    grid-area: 1 / 1 / 2 / 13;
+}
+/* 2 */
+.banner{
+
+display: none;
+}
+
+
+.hero{
+    background-image: url('../img/girl.png');
+    grid-area: 2 / 1 / 10 /13;
+    background-repeat: no-repeat;
+    background-size: cover; /* Resize the background image to cover the entire container */
+    /* background-position: inherit;  */
+  
+   
+    background-position: center top;
+}
+
+
+
+.banner{
+    /* display: none; */
+    grid-area: 2 / 1 / 3 / 13; 
+    background-color: var(--yellow);
+    display: none;
+}
+
+.hero-wish{
+
+   grid-area: 6/ 11 /  7/ 12;
+    text-align: right;
+    color: white;
+    font-size: .7rem;
+    margin-left: 17px;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: end;
+    position :unset;
+  
+}
+
+
+
+/*  The form is inside of this div.*/
+.donation{
+    grid-area: 2 / 2 / 11/ 6 ;
+    background-color: var(--yellow);
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+  
+}
+.donation-title{
+    padding-top: 40px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+    font-size: 1.3rem;
+  
+
+    box-shadow: inset  0em  .8em .5em  -.9em black;  
+
+}
+/* form section */
+
+.donation-form{
+    background-color: white;
+    height: 87%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px 20px 20px ;
+
+    margin: 20px;
+
+  
+    justify-content: center;
+    overflow: auto;
+    border-radius: 15px;
+    overflow: hidden;
+
+}
+
+.form-p1{
+    text-align: center;
+    font-weight: 100;
+    resize:none;
+    padding-top: 10px;
+    font-size: .8rem;
+  
+}
+.form-p2{
+    text-align: center;
+    margin: 10px;
+    font-size: .99rem;
+    font-weight: 500;
+}
+
+
+
+form{
+    display: flex;
+    flex-direction: column;
+
+
+  
+}
+
+form input{
+
+   width: auto; 
+   margin: 1.8px;
+   padding: 10px;
+   border-radius: 5px;
+   border: 2px solid #eee;
+}
+input ::placeholder{
+    color: #F8F8F8;
+  
+}
+
+.check-form{
+    margin: 20px;
+    font-size: .72rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.chk-yes{
+    margin-right: 6px;
+}
+
+.btn-form{
+   height: 45px;
+   margin-left: 3em;
+   margin-right: 3em;
+   margin-bottom: 20px;
+}
+
+
+.form-agree-terms{
+    font-size: .9rem;
+    font-weight:lighter;
+    margin-bottom: 10px;
+   color: var(--light-font)
+}
+
+
+.found-logo{
+   width: 180px;
+   height: auto;
+   align-self: center;
+   justify-content: flex-end;
+   margin: 30px 30px;
+   padding: 0;
+}
+
+
+
+.meet-Audrey{
+  
+    grid-area: 10 / 8 / 11 / 11; 
+    align-self:flex-end;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.4rem;
+
+}
+.meet-Audrey span{
+
+    color: var(--pink);
+}
+
+.meet-Audrey b{
+    text-align: center;
+}
+
+
+
+
+
+/* PROFILE section */
+
+
+.profile-grid{
+grid-area: 11/ 1 / 18/ 13 ;
+display: grid;
+
+grid-template-columns: 50% 50% ;
+
+
+
+}
+
+.about-profile{
+   
+    justify-self: center;
+    padding: 8em;
+    margin-top: 10%;
+
+ 
+
+
+}
+.profile-title{
+    font-size: 1.2rem; 
+    text-align: center; 
+    margin-bottom: 16px;
+     display: block;
+}
+.about-profile p{
+  font-size: .9rem;
+    margin: 16px;
+  line-height: 25px;
+
+}
+
+.profile-img{
+
+    margin-top: 60px;
+
+    align-self: top;
+    justify-self: center;
+    
+
+}
+
+
+
+
+
+.yellow-bk{
+    grid-area: 19/ 1 / 21 / 13 ;
+    background-color: var(--yellow);
+display: grid;
+grid-template-columns: repeat(6, 1fr);
+margin-top: 40px;
+}
+.yellow-bk-banner{
+ 
+    background-color: #B33CC8;
+     color: white;
+ font-size: 1.1rem;
+text-align: center;  
+    grid-area: 2 / 1/ 3 /7;
+    padding: 10px;
+
+    margin-top: 30px;
+}
+
+
+/* YELLOW  section */
+.yellow-bk-about{
+    margin: 30px 30px;
+
+    grid-area: 3 / 2 / 4/ 5;
+    line-height:30px ;
+    font-size: .87rem;
+
+}
+.yellow-bk-wishes{
+    grid-area: 3 / 5 / 4 / 6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ 
+}
+.donations-to-date{
+    font-size: .9rem;
+    font-weight: 800;
+    
+}   
+.amt-to-date{
+    color: var(--pink);
+
+    font-size: 1.3rem;
+}
+
+
+
+/* CARD section */
+
+.bizcard{
+    grid-area: 21/ 1 / 23/ 13 ;
+
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    /* grid-template-rows: repeat(auto-fill, 60px); */
+    grid-gap: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+   
+}
+
+.bizcard img{
+    grid-area: 2 / 2/ 4 / 4;
+    margin-bottom: 30px;
+}
+
+.free-banner{
+   grid-area: 2 / 4 / 3 / 7; 
+  text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    align-self: end;
+    font-size: 1.3rem;
+}
+.bizcard-discount{
+    grid-area: 3 / 4 / 4 / 7;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+
+}
+
+.btn-col{
+    display: flex;
+    flex-direction: column;
+    align-items: inherit;
+}
+.btn-3{
+    margin: 10px;
+    width: 30%;
+}
+
+
+
+
+/* Blue background section */
+.blue-bk{
+    grid-area: 23/ 1 / 25 / 13 ;
+    background-color: var(--blue);
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    /* grid-template-rows: repeat(auto-fill, 60px); */
+
+
+}
+.blue-bk p{
+    color: white;
+    margin: 10px;
+}
+
+
+.blue-thanks{
+    text-align: center;
+    grid-area: 1/2/4/6;
+    margin: 30px 30px;
+}
+
+.ceo-profile{
+    grid-area: 4/1/6/7;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+    text-align: left;
+}
+
+
+
+/* foooter */
+footer{
+    grid-area: 28/ 1 / 30 / 13 ;
+    /* display: grid; */
+    /* grid-template-columns: repeat(6, 1fr);
+    margin: 20px 20px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.footer-logo{
+    margin-top: 100px;
+    margin-bottom: 40px;
+    height: 40px; 
+    width: auto;
+
+}
+
+.trademark-desc{
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.trademark-desc p{
+    grid-area: 1/1/2/2 ;
+    align-self: center;
+    justify-self: center;
+
+}
+
+
+footer p{
+    text-align: center;
+    font-size: .9rem;
+}
+
+
+
+.trademark-desc{
+    margin-top: 20px;
+   width: 40%;
+}
+
+
+.pharma-logo{
+    height: 30px;
+    margin: 50px 60px;
+    width: auto;
+}
+
+
+
+
+
+/* TABLET   */
+@media (max-width:961px) {
+
+    .wrapper-grid{
+       
+    /* grid-template-columns: minmax(12, 1fr); */
+    grid-template-columns:  repeat(12, minmax(0, 1fr));
+ 
+
+      
+    }
+
+    .banner{
+
+        display: flex;
+        
+        grid-area: 2 / 1 / 3/ 13;
+        background-color: var(--yellow);
+        justify-content: center;
+        align-items: center;
+        height: 130px;
+        
+    }
+    .banner p{
+        font-size: 2rem;
+        
+    }
+
+
+
+
+  .hero{
+
+    background-image: url('../img/girlsmall.png');
+    background-size: cover;
+    background-position: center top;
+   grid-column: 1/13;
+   grid-row: 3/ 7;
+   height: 50vw;
+   width: auto;
+
+  box-shadow: inset 180px 0 300px -79px rgb(0 0 0 / 72%);
+ 
+  
+    width: auto;
+
+    }
+
+ 
+
+    .hero-wish{
+        grid-area: 3 / 1 / 4 / 3;
+        font-size: .7rem;
+        margin-top: 10px;
+        text-align: left;
+
+
+    color: white;
+
+    margin-left: 20px;
+    padding-left: 0;
+    margin-top: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items:initial;
+    align-self: flex-start;
+  
+    }
+
+
+    /* FORM AREA */
+    .donation{
+    
+        grid-area: 7 / 1 / 22 / 13;
+        background-color: white;
+      
+    }
+
+
+    .donation-title{
+     display: none;
+    }
+    
+
+
+    .form-p1{
+        font-size: .83rem;
+        
+
+ 
+
+    }
+
+
+    .form-p2{
+        font-size: 1.1rem;
+        margin-bottom: 50px;
+     
+    }
+
+    .donation-form{
+        height: 100%;
+    }
+
+form input{
+
+   height: 50px;
+   margin-left: 6em;
+   margin-right: 6em;
+   margin: 5px 5px;
+   padding: 10px;
+    border-color: #B2B2B2;
+
+}
+input,
+input::-webkit-input-placeholder {
+    font-size: 1.7rem;
+    line-height: 3;
+  
+}
+
+.check-form {
+   
+    font-size: .9rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    padding-left: 130px;
+    padding-right: 130px;
+}
+
+.chk-yes{
+    align-self: flex-start;
+}
+
+.btn-form{
+    width: 50%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 20px ;
+    align-self: center;
+    border-radius: 20px;
+}
+
+    /*  */
+    .meet-Audrey{
+        grid-area: 22 / 1 / 24/ 13; 
+        margin: 0px;
+        font-size: 2rem;
+    }
+
+
+     /* PROFILE */
+
+     .profile-grid{
+         grid-area: 24/ 1/ 28/ 13;
+
+grid-template-columns: 40% 60% ;
+  
+
+
+     }
+    .profile-title{
+        margin-top: 30px;
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+    }
+
+     .about-profile{
+        padding: 1em;
+    
+     }
+     .about-profile p{
+         margin-left:10px;
+         margin-right: 10px;
+         font-size: .9rem;
+
+     }
+     .about-profile p:nth-last-of-type(-n+2){
+      display: none;
+    }
+     .profile-img{
+        
+         align-self: stretch;
+
+     }
+
+
+
+
+
+/* yellow bk */
+
+     .yellow-bk{
+        grid-area: 28/ 1/ 34/ 13;
+        margin-top: 50px;
+     }
+.yellow-bk-banner{
+    background-color: #B33CC8;
+    color: white;
+    font-size: 1.1rem;
+    text-align: center;
+    grid-area: 1 / 1/ 2 /7;
+    padding: 10px;
+
+
+    margin: 0;
+}
+     .yellow-bk-about{
+        margin-left: 15px;
+        text-align: left;
+        margin-top: 60px;
+        margin-bottom: 60px;
+        grid-area: 3/ 1 / 5/ 5;
+        line-height: 25px;
+        font-size: .9rem;
+        margin-right: 0;
+        
+    }
+     
+
+    .yellow-bk-wishes{
+        grid-area: 3/ 5 / 5/ 7;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .donations-to-date {
+        font-size: 1.3rem;
+    }
+    .amt-to-date{
+        font-size: 2rem;
+    }
+
+
+
+     /* Business  card area tablet */
+     .bizcard{
+        grid-area: 34/ 1/ 39/ 13;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+
+        grid-gap: 20px;
+    
+    }
+     
+    .bizcard img{
+        grid-area: 2 / 2/ 3 / 6;
+        margin-bottom: 30px;
+        
+        justify-self: center;
+        
+    
+    
+    }
+    .free-banner{
+        grid-area: 1 / 2/ 2/ 6;
+    }
+    
+    .bizcard-discount{
+        grid-area: 3 / 2 / 4 / 6;
+        align-items: center;
+    }
+
+    .btn-col{
+        flex-direction: row;
+    }
+    .btn-3{
+        display: inline;
+        margin: 10px;
+        width: 45%;
+        height: 50px;
+        font-size: 1rem;
+        border-radius: 26px;
+
+    }  
+
+.blue-bk{
+    grid-area: 39/ 1/ 42/ 13;
+}
+
+footer{
+    grid-area: 42/ 1/ 46/ 13;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.trademark-desc{
+    margin-top: 20px;
+   width: 60%;
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+/* PHONES */
+@media (max-width:700px) {
+
+        .banner{
+            text-align: center;
+            height: 150px;
+        }
+        
+        .hero-wish{
+            grid-area: 3 / 1 / 4 / 5;
+        }
+
+        .donation-form{
+            padding: 0;
+            flex-wrap: inherit;
+        }
+        input,
+        input::-webkit-input-placeholder {
+            font-size: 1rem;
+            line-height: 3;
+          
+        }
+        .check-form{
+            font-size: .8rem;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .btn-form{
+            width: 90%;
+            height: 35px;
+        }
+
+
+
+        .form-agree-terms{
+        font-size: .8rem;
+        }
+
+        .meet-Audrey p{
+            font-size: 1.5rem;
+            font-weight: 100;
+        }
+
+/* profile section */
+
+        .profile-grid{
+            grid-template-columns:100%;
+            grid-template-areas:
+            'profile-img'
+            'about-profile';
+        }
+
+        .profile-img{
+            grid-area: profile-img;
+
+        }
+        .about-profile{
+            grid-area: about-profile;
+        }
+
+        .about-profile p{
+            margin: 0;
+            word-wrap: break-word;
+            margin: 16px ;
+ 
+        }
+        .about-profile p:nth-last-of-type(-n+2){
+            display: block;
+        
+          }
+
+          /* yellow section */
+          .yellow-bk{
+              margin-top: 0;
+            grid-template-columns: 100%;
+              grid-template-areas: 
+              'yellow-bk-banner'
+              'yellow-bk-about'
+              'yellow-bk-wishes';
+          }
+          .yellow-bk-banner{
+              grid-area: yellow-bk-banner;
+          }
+          .yellow-bk-about{
+              grid-area: yellow-bk-about;
+          }
+          .yellow-bk-wishes{
+              grid-area: yellow-bk-wishes;
+              margin-bottom: 100px;
+          }
+          .amt-to-date{
+              margin: 15px;
+          }
+
+
+          /* Card section */
+          .btn-col{
+
+            justify-content: center;
+            display:block;
+        }
+        .btn-3{
+            width: 100%;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        .btn-fax{
+            display: none;
+
+        }
+
+        /* Blue section */
+
+        .blue-bk{
+            grid: none;
+        }
+
+
+        /* Footer */
+
+        footer{
+            margin: 0;
+        }
+
+        .footer-logo{
+            height: 20px;
+            width: auto;
+        }
+
+        footer p{
+            font-size: .5rem;
+
+        }
+    
+        .trademark-desc{
+            width: 70%;
+        }
+        
+        .pharma-logo{
+            height: 20px;
+            width: auto;
+        }
+}
