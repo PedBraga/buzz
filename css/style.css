@@ -58,6 +58,7 @@ i{
     height: 100%; */
     min-height: 0;  
     min-width: 0; 
+    max-width: 1440px;
     /* grid-template-columns:  repeat(12, minmax(0, auto)); */
     grid-template-columns:  repeat(12, 1fr);
 
